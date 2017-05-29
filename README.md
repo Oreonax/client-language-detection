@@ -2,10 +2,11 @@ Client Language detection plugin
 ================================
 
 Vanilla Javascript plugin for browser language detection with automatic redirection.
+This is a fork of ![https://github.com/danieledesantis/jquery-language-detection](Daniele De Santis's Jquery work)
 
 ## Installation
 
-Include the production file.
+Include the production file as soon as possible in your head.
 
 ```html
 <script src="path/jquery.language.detection.min.js"></script>
