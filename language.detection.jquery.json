@@ -1,8 +1,8 @@
 {
     "name": "language.detection",
     "version": "1.0.3",
-    "title": "jQuery Language detection",
-    "author": {
+    "title": "Vanilla JS Language detection",
+    "Original_author": {
         "name": "Daniele De Santis",
         "url": "http://www.danieledesantis.net"
     },
@@ -12,11 +12,9 @@
             "url": "https://github.com/danieledesantis/jquery-language-detection/blob/master/LICENSE.md"
         }
     ],
-    "dependencies": {
-        "jquery": ">=1.5"
-    },
-	"homepage": "https://github.com/danieledesantis/jquery-language-detection",
-    "description": "jQuery plugin for browser language detection with automatic redirection.",
+    "forked_from":"https://github.com/danieledesantis/jquery-language-detection",
+	"homepage": "https://github.com/Oreonax/client-language-detection",
+    "description": "Vanilla Javascript plugin for browser language detection with automatic redirection.",
     "keywords": [
 		"Language",
         "Browser",

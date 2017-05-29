@@ -1,14 +1,13 @@
-jQuery Language detection plugin
+Client Language detection plugin
 ================================
 
-jQuery plugin for browser language detection with automatic redirection.
+Vanilla Javascript plugin for browser language detection with automatic redirection.
 
 ## Installation
 
-Include the production file after jquery.
+Include the production file.
 
 ```html
-<script src="path/jquery-latest-version.js"></script>
 <script src="path/jquery.language.detection.min.js"></script>
 ```
 
@@ -31,33 +30,31 @@ Assign to each `a` element in your language menu the `.language` class and the `
 <a class="language" href="path/to/spanish-version" data-language="es">Spanish</a>
 ```
 
-### jQuery
+### Initalize
 
 Initialize the plugin in your main scripts file (the one included in all of your pages).
 
 ```javascript
-$(document).ready(function() {
-	$(document).languageDetection({
-		languages   :   [
-			{
-				code : 'en',
-				path : '',
-				defaultLanguage : true
-			},
-			{
-				code : 'it',
-				path : 'it'
-			},
-			{
-				code : 'fr',
-				path : 'fr'
-			},
-			{
-				code : 'es',
-				path : 'es'
-			}
-		]	
-	});
+document.languageDetection({
+	languages   :   [
+		{
+			code : 'en',
+			path : '',
+			defaultLanguage : true
+		},
+		{
+			code : 'it',
+			path : 'it'
+		},
+		{
+			code : 'fr',
+			path : 'fr'
+		},
+		{
+			code : 'es',
+			path : 'es'
+		}
+	]	
 });
 ```
 
@@ -112,29 +109,27 @@ Default: null
 ### Example with custom options
 
 ```javascript
-$(document).ready(function() {
-	$(document).languageDetection({
-		domain        :  'http://www.mydomain.xx/subfolder/',
-		languages     :  [
-			{
-				code : 'it',
-				path : ''
-			},
-			{
-				code : 'en',
-				path : 'en',
-				defaultLanguage : true
-			},
-			{
-				code : 'fr',
-				path : 'fr'
-			},
-			{
-				code : 'es',
-				path : 'es'
-			}
-		],
-		expires       :  10	
-	});
+document.languageDetection({
+	domain        :  'http://www.mydomain.xx/subfolder/',
+	languages     :  [
+		{
+			code : 'it',
+			path : ''
+		},
+		{
+			code : 'en',
+			path : 'en',
+			defaultLanguage : true
+		},
+		{
+			code : 'fr',
+			path : 'fr'
+		},
+		{
+			code : 'es',
+			path : 'es'
+		}
+	],
+	expires       :  10	
 });
 ```
